@@ -1,0 +1,38 @@
+2016-05-21 09:18:27 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /keihisystem/app/webroot/
+Stack Trace:
+#0 /Users/kawase/Dropbox/MAMP/htdocs/keihisystem/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/kawase/Dropbox/MAMP/htdocs/keihisystem/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /Users/kawase/Dropbox/MAMP/htdocs/keihisystem/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2016-05-21 09:21:14 Error: [MissingControllerException] Controller class KeihisystemController could not be found.
+Exception Attributes: array (
+  'class' => 'KeihisystemController',
+  'plugin' => NULL,
+)
+Request URL: /keihisystem/
+Stack Trace:
+#0 /Users/kawase/Dropbox/MAMP/htdocs/keihisystem/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-21 09:41:01 Error: [MissingControllerException] Controller class KeihiController could not be found.
+Exception Attributes: array (
+  'class' => 'KeihiController',
+  'plugin' => NULL,
+)
+Request URL: /keihi/input.php
+Stack Trace:
+#0 /Users/kawase/Dropbox/MAMP/htdocs/keihisystem/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2016-05-21 10:44:17 Error: [MissingControllerException] Controller class KeihiController could not be found.
+Exception Attributes: array (
+  'class' => 'KeihiController',
+  'plugin' => NULL,
+)
+Request URL: /keihi/
+Stack Trace:
+#0 /Users/kawase/Dropbox/MAMP/htdocs/keihisystem/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
