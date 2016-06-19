@@ -1,10 +1,10 @@
-<?php $this->set('title_for_layout', '交通費入力'); ?>
+<?php $this->set('title_for_layout', '交通費編集'); ?>
 <div class="transportExpensesDetails form">
-<!-- <h2>【交通費精算システム】登録</h2> -->
+<!-- <h2>【交通費精算システム】編集</h2> -->
 <?php
 	echo $this->form->create('TransportExpensesDetail',array('class'=>'form-horizontal'));?>
 <fieldset>
-	<legend>交通費 入力</legend>
+	<legend>交通費 編集</legend>
 	<div class="control-group">
 	<?php
 		echo $this->Form->label('moving_date','日付',array('class'=>'control-label','for'=>'moving_date'));
@@ -68,7 +68,7 @@
 </fieldset>
 <div class="form-actions">
 <?php
-	echo $this->Form->button('登録',array('class'=>'btn btn-primary'));
+	echo $this->Form->button('更新',array('class'=>'btn btn-primary'));
 	echo $this->Html->link('キャンセル',array('action'=>'index'),array('class'=>'tn'));
 ?>
 </div>

@@ -30,5 +30,16 @@ App::uses('Controller', 'Controller');
  * @package		app.Controller
  * @link		http://book.cakephp.org/2.0/en/controllers.html#the-app-controller
  */
+
 class AppController extends Controller {
+	// TwitterBootstrap 設定
+	public $helpers = array(
+	 		'Html' => array('className' => 'TwitterBootstrap.BootstrapHtml'),
+	 		'Form' => array('className' => 'TwitterBootstrap.BootstrapForm'),
+	 		'Paginator' => array('className' => 'TwitterBootstrap.BootstrapPaginator'),
+	 		'Session',
+	 );
+ 	public $layout = 'bootstrap';
+
+	public $components = array('Session');
 }
