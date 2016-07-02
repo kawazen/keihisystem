@@ -2,7 +2,7 @@
 <div class="transportExpensesDetails form">
 <!-- <h2>【交通費精算システム】編集</h2> -->
 <?php
-	echo $this->form->create('TransportExpensesDetail',array('class'=>'form-horizontal'));?>
+	echo $this->Form->create('TransportExpensesDetail',array('class'=>'form-horizontal'));?>
 <fieldset>
 	<legend>交通費 編集</legend>
 	<div class="control-group">

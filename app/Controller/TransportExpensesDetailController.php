@@ -16,7 +16,6 @@ class TransportExpensesDetailController extends AppController{
 
 	public function add(){
 		if($this->request->is('post')){
-			$this->TransportExpensesDetail->create();
 			if($this->TransportExpensesDetail->save($this->request->data)){
 				$this->Session->setFlash('交通費を登録しました。');
 				$this->redirect(array('action'=>'index'));
@@ -30,7 +29,12 @@ class TransportExpensesDetailController extends AppController{
 	}
 
 	public function edit($id=null){
-		$this->TransportExpensesDetail->id = $id;
+		$post=$this->TransportExpensesDetail->findById($id);
+		if(!$post){
+			throw new NotFoundException('指定の交通費詳細が見つかりませんでした。');
+		}
+		$this->set('TransportExpensesDetail',$post);
+		// $this->TransportExpensesDetail->id = $id;
 		if($this->request->is('post')||$this->request->is('put')){
 			if($this->TransportExpensesDetail->save($this->request->data)){
 				$this->Session->setFlash('交通費を更新しました。');
@@ -40,7 +44,6 @@ class TransportExpensesDetailController extends AppController{
 			}
 		}else{
 			$this->request->data = $this->TransportExpensesDetail->read(null,$id);
-			echo print_r($this->request->data);
 		}
 	}
 
