@@ -48,7 +48,6 @@
 			array(
 				'label'=>false,
 				'type'=>'radio',
-				'value'=>1,
 				'legent'=>false,
 				'separator'=>'',
 				'options'=>array('0'=>'片道','1'=>'往復'),

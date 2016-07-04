@@ -32,8 +32,6 @@ class TransportExpensesDetailController extends AppController{
 		if(!$this->TransportExpensesDetail->findById($id)){
 			throw new NotFoundException('指定の交通費詳細が見つかりませんでした。');
 		}
-		$this->set('TransportExpensesDetail',$post);
-		// $this->TransportExpensesDetail->id = $id;
 		if($this->request->is('post')||$this->request->is('put')){
 			if($this->TransportExpensesDetail->save($this->request->data)){
 				$this->Session->setFlash('交通費を更新しました。');
