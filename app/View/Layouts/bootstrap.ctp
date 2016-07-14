@@ -51,6 +51,7 @@
 						<li class="active"><a href="/">交通費精算</a></li>
 						<!-- <li><a href="#about">経費精算</a></li> -->
 						<!-- <li><a href="#contact">システム管理者用</a></li> -->
+						<li><a href="user">ユーザー管理</a></li>
 					</ul>
 				</div><!--/.nav-collapse -->
 			</div>

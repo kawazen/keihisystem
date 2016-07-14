@@ -22,11 +22,11 @@ foreach( $TransportExpensesDetails as $row) { ?>
         <td><?php
             echo $this->Html->link('編集',
                 array('action'=>'edit',$row['TransportExpensesDetail']['id']),
-                array('class'=>'btn btn-primary btn-small','icon'=>'pencil white'));
+                array('class'=>'btn btn-primary btn-small','icon'=>'pencil white','escape'=>false));
 
             echo $this->Form->postLink('削除',
                 array('action'=>'delete',$row['TransportExpensesDetail']['id']),
-                array('class'=>'btn btn-danger btn-small','icon'=>'trash white'),
+                array('class'=>'btn btn-danger btn-small','icon'=>'trash white','escape'=>false),
                 '削除してもよろしいですか？'); ?>
         </td>
     </tr>
